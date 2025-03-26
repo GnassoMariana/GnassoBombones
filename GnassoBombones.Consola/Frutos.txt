@@ -1,0 +1,6 @@
+﻿1|Almendra
+2|Nuez
+3|Avellana
+4|Pistacho
+6|Maní
+
