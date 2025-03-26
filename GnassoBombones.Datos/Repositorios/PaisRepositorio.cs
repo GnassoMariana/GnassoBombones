@@ -30,7 +30,7 @@ namespace GnassoBombones.Datos.Repositorios
                 var registros = File.ReadAllLines(ruta);
                 foreach (var registro in registros)
                 {
-                    if (string.IsNullOrEmpty(registro)) continue;
+                    
                     Pais pais = ConstuirPais(registro);
                     paises.Add(pais);
                 }
@@ -44,7 +44,8 @@ namespace GnassoBombones.Datos.Repositorios
         private Pais ConstuirPais(string registro)
         {
             var campos = registro.Split('|');
-            var paisId = int.Parse(campos[0].Trim());
+            //var paisId = int.Parse(campos[0]);
+            var paisId=Convert.ToInt32(campos[0]);
             var nombre = campos[1];
             return new Pais
             {

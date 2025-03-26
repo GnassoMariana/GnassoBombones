@@ -2,5 +2,4 @@
 2|Nuez
 3|Avellana
 4|Pistacho
-6|Maní
-
+5|Maní
